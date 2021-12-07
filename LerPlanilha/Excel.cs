@@ -1,5 +1,6 @@
 ﻿using ClosedXML.Excel;
 using Infraestructure.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -30,17 +31,16 @@ namespace LerPlanilha
 
                 for (int l = 2; l <= this.RowNums; l++)
                 {
-
-                    var codigo = this.Sheet.Cell($"A{l}").GetValue<int>();
+                    var codigo = this.Sheet.Cell($"A{l}").ToInt();
                     var descricao = this.Sheet.Cell($"B{l}").GetValue<string>();
-                    var preco = this.Sheet.Cell($"C{l}").GetValue<decimal>();
+                    var preco = this.Sheet.Cell($"C{l}").ToDecimal();
 
                     list.Add(new Product(codigo, descricao, preco));
                 }
             }
-            catch (System.Exception)
+            catch (Exception e)
             {
-                return list;
+                Console.WriteLine(e.Message);
             }
 
             return list;

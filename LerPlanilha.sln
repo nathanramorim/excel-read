@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31903.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LerPlanilha", "LerPlanilha\LerPlanilha.csproj", "{A56FA172-AD9D-4304-B1D6-9B270F038FA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LerPlanilha", "LerPlanilha\LerPlanilha.csproj", "{A56FA172-AD9D-4304-B1D6-9B270F038FA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{BDBC8675-1BD7-4C95-B412-41ED4468E58D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestructure", "Infraestructure\Infraestructure.csproj", "{BDBC8675-1BD7-4C95-B412-41ED4468E58D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
